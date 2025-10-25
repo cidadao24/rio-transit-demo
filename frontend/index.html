@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rio Transit Demo</title>
+  <!-- Leaflet CSS -->
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.3/dist/leaflet.css"
+        integrity="sha512-sA+eS0vOZ4VEmpjk1qjdEyo/s11bycFvglwtHhF+I7sj98Imv39Y1xF7aaBgeVd9jzDp2TRf06N49oe6nEqMCg=="
+        crossorigin=""/>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <h1>Rio Transit Demo</h1>
+  <div id="controls">
+    <label for="lineFilter">Linha:</label>
+    <input type="text" id="lineFilter" placeholder="Digite o número da linha">
+    <button id="refreshBtn">Atualizar</button>
+  </div>
+  <div id="map"></div>
+
+  <!-- Leaflet JS -->
+  <script src="https://unpkg.com/leaflet@1.9.3/dist/leaflet.js"
+          integrity="sha512-nmmCkNnE+9C18WXNwz8WXZlyrfl+a+42QaLUkvv/h+ByfuYaL6VLdywczKV8wHLrjKk2mPnfF6tRRbqcqOgzZA=="
+          crossorigin=""></script>
+  <script src="app.js"></script>
+</body>
+</html>
