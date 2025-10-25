@@ -12,7 +12,7 @@ const refreshBtn = document.getElementById('refreshBtn');
 
 async function fetchPositions() {
   // Fetch real-time bus positions from DataRio (SPPO)
-  const url = 'https://dados.mobilidade.rio/gps/sppo';
+  const url = 'https://corsproxy.io/https://dados.mobilidade.rio/gps/sppo';
   try {
     const response = await fetch(url);
     const data = await response.json();
